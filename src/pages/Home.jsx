@@ -45,7 +45,7 @@ function Home() {
                 // if the length of the posts is greater than 0 then the data will be loaded else no data found will be displayed
                 (posts.length >0 ?
                     (
-                        <div>
+                        <div className=' mt-10 grid   xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl p-2 mx-auto space-y-10 space-x-5 min-h-[80vh]'>
 
                             {/* mapping the posts and passing the post as a prop to the Product component*/}
                             {
@@ -59,7 +59,7 @@ function Home() {
                     ):
                     (
                         // if no data is found then this will be displayed
-                        <div>No data found</div>
+                        <div className='flex items-center justify-center'>No data found</div>
                     )
                 )
             }
